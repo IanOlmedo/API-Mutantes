@@ -48,7 +48,3 @@ def check_diagonal(matrix, row, col, n):
 
     return False
 
-###PRUEBA PARA VERIFICAR SI ES MUTANTE###
-
-dna = ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
-print(is_mutant(dna))  

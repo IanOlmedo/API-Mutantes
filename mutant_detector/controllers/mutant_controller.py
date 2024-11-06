@@ -26,10 +26,10 @@ def mutant():
     if existing_record:
         if existing_record.is_mutant:
             session.close()
-            return jsonify({"message": "Mutant detected"}), 200
+            return jsonify({"message": "El DNA es de un mutante"}), 200
         else:
             session.close()
-            return jsonify({"message": "Forbidden"}), 403
+            return jsonify({"message": "Forbidden-El DNA no es de un mutante"}), 403
 
     is_mutant_result = is_mutant(dna_sequence)
 
